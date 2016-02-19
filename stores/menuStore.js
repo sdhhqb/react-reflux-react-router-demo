@@ -31,13 +31,13 @@ var Store = Reflux.createStore({
 		this.output();
 	},
 	output: function() {
-    var status = {
-    	menuData: _menuData,
-    	curActive: _curActive,
-    	curPath: _curPath
-    };
-    this.trigger(status);
-  }
+		var status = {
+			menuData: _menuData,
+			curActive: _curActive,
+			curPath: _curPath
+		};
+		this.trigger(status);
+	}
 });
 
 export default Store;

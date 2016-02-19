@@ -92,6 +92,6 @@ var Constants = {
 			"child": false
 		}
 	]
-}
+};
 
 export default Constants;

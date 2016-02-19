@@ -10,8 +10,8 @@ var MyApp = React.createClass({
 	getInitialState: function () {
 		return {
 			menuData: [],
-    	curActive: "",
-    	curPath: ""
+			curActive: "",
+			curPath: ""
 		};
 	},
 	componentDidMount: function () {
