@@ -1,8 +1,17 @@
-export default {
+import Product from './components/Product';
+
+var productRoute = {
 	path: 'product',
-	getComponents(location, callback) {
-    require.ensure([], function (require) {
-      callback(null, require('./components/Product'))
-    })
-  }
-}
+
+	component: Product,
+
+	getChildRoutes(location, callback) {
+		require.ensure([], function (require) {
+			callback(null, [
+				require('./routes/ProductList'),
+				require('./routes/SaleList'),
+			]);
+		});
+	},
+};
+module.exports = productRoute;

@@ -3,8 +3,10 @@ import React from 'react';
 var Product = React.createClass({
 	render: function () {
 		return (
-			<div>product content</div>
+			<div>
+				{this.props.children}
+			</div>			
 		);
 	}
 });
-export default Product;
+module.exports = Product;

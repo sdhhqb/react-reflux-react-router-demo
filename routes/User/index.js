@@ -1,4 +1,4 @@
-export default {
+var userRoute = {
 	path: 'userlist',
 	getComponents(location, callback) {
     require.ensure([], function (require) {
@@ -6,3 +6,4 @@ export default {
     })
   }
 }
+module.exports = userRoute;

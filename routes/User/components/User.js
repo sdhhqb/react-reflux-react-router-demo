@@ -7,6 +7,4 @@ var User = React.createClass({
 		);
 	}
 });
-// 使用commonjs方式返回
 module.exports = User;
-// export default User;

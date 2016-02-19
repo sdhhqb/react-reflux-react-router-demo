@@ -8,13 +8,13 @@ var Constants = {
 				{
 					"name": "产品列表",
 					"level": 2,
-					"route": "productlist",
+					"route": "product/productlist",
 					"child": false
 				},
 				{
 					"name": "销售报表",
 					"level": 2,
-					"route": "productsale",
+					"route": "product/salelist",
 					"child": false
 				}
 			]
